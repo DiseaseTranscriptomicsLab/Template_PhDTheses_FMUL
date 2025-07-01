@@ -1,0 +1,106 @@
+% !TEX root = ../PhD Thesis.tex
+\chapter{Introduction}
+\pagenumbering{arabic}
+
+\section{Subtitle}
+
+\section*{Subtitle without numbering}
+
+\lipsum[3] \cite{wickham:2021aa}
+
+% ---------------------
+% 1. Basic Figure
+% ---------------------
+
+% You can also drag the figures to this section and it will automatically include them
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{phd-thesis-main/images/logo/ulisboa-only.pdf}
+  \caption{This is a basic figure.}
+  \label{fig:basic}
+\end{figure}
+ 
+
+% ---------------------
+% 2. Figure with Specific Height and Width
+% ---------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=5cm]{phd-thesis-main/images/logo/ulisboa-only.pdf}
+  \caption{Figure with custom dimensions.}
+  \label{fig:customsize}
+\end{figure}
+
+% ---------------------
+% 3. Side-by-Side Figures (Subfigures)
+% ---------------------
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{phd-thesis-main/images/logo/ulisboa-only.pdf}
+    \caption{First image}
+    \label{fig:sub1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{phd-thesis-main/images/logo/ulisboa-only.pdf}
+    \caption{Second image}
+    \label{fig:sub2}
+  \end{subfigure}
+  \caption{Two images side by side}
+  \label{fig:sidebyside}
+\end{figure}
+
+% ---------------------
+% 4. Basic Table
+% ---------------------
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    A & B & C \\
+    \hline
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    \hline
+  \end{tabular}
+  \caption{Basic table}
+  \label{tab:basic}
+\end{table}
+
+% ---------------------
+% 5. Table with Multi-Column Header
+% ---------------------
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \multicolumn{2}{|c|}{Group 1} & Group 2 \\
+    \hline
+    X & Y & Z \\
+    \hline
+    1 & 2 & 3 \\
+    \hline
+  \end{tabular}
+  \caption{Table with merged header}
+  \label{tab:mergeheader}
+\end{table}
+
+% ---------------------
+% 6. Table with Fixed Width Columns
+% ---------------------
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|>{\raggedright\arraybackslash}p{3cm}|p{5cm}|}
+    \hline
+    Column A & Column B \\
+    \hline
+    Text with wrapped lines & Another wrapped cell with long content to demonstrate the fixed column widths. \\
+    \hline
+  \end{tabular}
+  \caption{Table with fixed width columns}
+  \label{tab:fixedwidth}
+\end{table}
+
+
